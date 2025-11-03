@@ -1,16 +1,15 @@
 # 5 ytri + 3 innri gæðaeiginleikar
 
-> Ytri (external) — upplifun notenda/rekstur: 
-> Innri (internal) — viðhald/þróun: 
+> Ytri (external) — upplifun notenda/rekstur
+> Innri (internal) — viðhald/þróun
 
-Veljið eina kröfu og lýsið henni í sér skrá með PLanguage sniði 
 ## Ytri (5)
 | Eiginleiki | Krafa (1 setning) | Rök/forsemdir (2–3 setn.) |
 |---|---|---|
 | 1. Notendavænt viðmót | Notendur eiga að geta lært á kerfið innan við 30 mínútur án utanaðkomandi aðstoðar. | Þjónustunotendur og starfsfólk eru með fjölbreyttan bakgrunn og ólíkan tölvulæsi. Einfaldleiki og leiðandi hönnun tryggja að notendur nái að nýta kerfið án sérstakrar kennslu. |
 | 2. Persónuvernd | Kerfið má aldrei deila persónugreinanlegum upplýsingum nema með samþykki notanda eða forráðamanns. | Um er að ræða viðkvæmar upplýsingar sem falla undir persónuverndarlög. Gagnavernd er forsenda fyrir trausti og samþykki notenda. |
-| 3. Áreiðanleiki | Kerfið skal vera aðgengilegt a.m.k. 99.9% af tímanum yfir mánuð. **(PLanguage krafa)** | Þar sem kerfið sér m.a. um lyfjagjöf og viðbrögð við aðstæðum, þarf það að vera stöðugt og tiltækt. Truflanir geta haft alvarlegar afleiðingar. |
-| 4. Svartími | Kerfið á að svara beiðnum innan við 2 sekúndur. | Hraði skiptir máli þegar verið er að veita mikilvægar upplýsingar, sérstaklega í streitumiklum aðstæðum. Notendur þurfa skjót svör. |
+| 3. **Áreiðanleiki** | **Sjá formlega PLanguage kröfu í `answers/planguage-reliability.md`** | Þar sem kerfið sér m.a. um lyfjagjöf og viðbrögð við aðstæðum, þarf það að vera stöðugt og tiltækt. Truflanir geta haft alvarlegar afleiðingar. |
+| 4. Svartími | Kerfið á að svara beiðnum á innan við 2 sekúndum. | Hraði skiptir máli þegar verið er að veita mikilvægar upplýsingar, sérstaklega í streitumiklum aðstæðum. Notendur þurfa skjót svör. |
 | 5. Aðgengi | Kerfið skal styðja skjálesara og hafa hátt litaskil (contrast) fyrir sjónskerta. | Mörg fatlaðra nota hjálpartæki við tölvunotkun og kerfið verður að vera aðgengilegt fyrir þá. Þetta fellur undir algilda hönnun |
 
 ## Innri (3)
