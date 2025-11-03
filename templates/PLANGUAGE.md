@@ -1,60 +1,44 @@
 # Gæðakrafa lýst í PLanguage 
 
-> Þetta skjal sýnir hvernig á að skilgreina eina **gæðakröfu** með aðferðinni **P-Language** samkvæmt Wiegers & Beatty (kafli 14).  
-> Fyllið út reiti með upplýsingum um gæðaeiginleika og mælanleg markmið.
-
 ---
 
 ## Merkimiði (TAG)
-Einkvæmt auðkenni gæðakröfunnar.  
-**Dæmi:** `Performance.Report.ResponseTime`
+Reliability.System.Availability
 
 ---
 
 ## Tilgangur / Ásetningur (AMBITION)
-Lýsir **tilgangi** eða **ástæðu** fyrir kröfunni — hvað hún á að bæta, tryggja eða hámarka.  
-**Dæmi:** Kerfið skal bregðast hratt við þegar notandi biður um að mynda skýrslu.
+Kerfið skal vera tiltækt og áreiðanlegt yfir allan rekstrartíma til að tryggja að mikilvægar upplýsingar og þjónusta séu alltaf aðgengilegar þegar notendur þurfa á þeim að halda.
 
 ---
 
 ## Mælikvarði (SCALE)
-Skilgreinir **hvað er mælt** og í **hvaða mælieiningum**.  
-**Dæmi:** Sekúndur sem líða frá því að notandi sendir beiðni þar til skýrslan byrjar að birtast.
+Hlutfall heildartíma þar sem kerfið er aðgengilegt og virkt fyrir notendur (uptime), mælt í prósentum yfir einn almanaksmánuð.
 
 ---
 
 ## Mælir / Mæliaðferð (METER)
-Lýsir **hvernig** eða **hvar** gæðaeiginleikinn er mældur og hvaða aðferð er notuð.  
-**Dæmi:** Stoppklukkupróf á 30 dæmigerðum skýrslum samkvæmt skilgreindu notkunarferli.
+Kerfisritanir (logs) og eftirlitskerfi (e. monitoring tools) sem skrá niður tímabil þar sem kerfið er niðri eða ekki aðgengilegt, ásamt mælingum á þjónustusvörun (heartbeat signals).
 
 ---
 
 ## Markmið (GOAL)
-Lágmarksgildi sem **verður að nást** til að kröfunni sé fullnægt.  
-**Dæmi:** 95% allra skýrslna skulu byrja að birtast innan **8 sekúndna**.  
-*(Hagsmunaaðili: Skrifstofustjóri útibús)*
+Kerfið skal vera aðgengilegt og virkt í að minnsta kosti 99,9% af tímanum yfir einn almanaksmánuð.
+(Hagsmunaaðili: Forstöðumaður þjónustukerfa og umönnunar)
 
 ---
 
 ## Æskilegt (STRETCH)
-Æskilegt frammistöðugildi sem teymið reynir að ná.  
-**Dæmi:** Forskilgreindar skýrslur innan 2 sekúndna, allar skýrslur innan 5 sekúndna.
+Kerfið haldi 99,95% aðgengi yfir mánuð í 11 af 12 mánuðum ársins.
 
 ---
 
 ## Óska (WISH)
-Gildi í besta heimi — markmið sem væri frábært að ná, en ekki krafa.  
-**Dæmi:** Allar skýrslur innan 1,5 sekúndna.
+Kerfið nái 100% aðgengi á öllum dögum sem ekki eru fyrirfram skilgreindir viðhaldsmánuðir.
 
 ---
 
 ## Grunnkerfi (BASE PLATFORM)
-Upplýsingar um viðmiðunarumhverfi fyrir mælingar.  
-**Dæmi:** Fjórkjarna örgjörvi, 8 GB RAM, Windows 10, 50 % frítt minni, 70 % CPU tiltækt, tengihraði 30 Mbps.
+Linux þjónn með 8 örgjörvakjörnum, 32 GB RAM, SSD diskur, 100 Mbps tenging, keyrt á container-uðum kerfum með sjálfvirkri villuvöktun og viðgerðum (e.g., Kubernetes).
 
 ---
-
-
-✅ **Leiðbeining:**  
-Þegar þú skrifar þína eigin PLanguage kröfu skaltu velja einn gæðaeiginleika og fylla út alla reiti.  
-Markmiðið er að gera kröfuna **mælanlega, prófanlega og rekjanlega**.
